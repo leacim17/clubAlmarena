@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Almarena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets/1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets/3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets/4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+    <main class="container mx-auto">
+        <div class="pl-5">
+            <h2 class="text-2xl font-semibold text-gray-800 my-3">Resumen de puntos</h2>
+        </div>
+        <section id="inicio" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
+            <div class= "text-white bg-gradient-to-t col-span-2 from-blue-950 to-sky-900 flex flex-col justify-between gap-1 items-start border-solid h-auto rounded-2xl p-9 shadow-lg transform transition-all duration-300 hover:scale-105 md:col-span-2 lg:col-span-2 lg:row-span-2">
+                <p class="font-semibold">Puntos Disponibles</p>
+                <p class="text-5xl md:text-6xl font-extrabold"> 13.500 </p>
+                <div class="flex flex-col justify-between items-center w-full">
+                    <div class="flex justify-between items-center w-full">
+                        <span class="text-sm">Próximo nivel</span>
+                        <span class="text-sm font-bold">15,000</span>
+                    </div>
+                    <div class="w-full bg-blue-900 rounded-full mt-3">
+                        <div class="bg-[#fa575f] h-2 rounded-full" style="width: 83%"></div>
+                    </div>
+                    <div class="w-full mt-2">
+                        <p class="text-xs text-gray-200">Te faltan 1.500 para pasar al proximo nivel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-md transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <p class="text-gray-600 text-sm font-medium mb-2">Vencimiento de Puntos</p>
+                <p class="text-4xl font-bold text-gray-800 mb-2">45</p>
+                <p class="text-sm text-gray-500">días restantes</p>
+                <div class="mt-4 flex items-center text-orange-600">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-xs">¡No te olvides de usarlos!</span>
+                </div>
+            </div>
+            <div class="bg-white border-2 border-gray-200 h-full rounded-2xl p-6 shadow-md transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <p class="text-gray-600 text-sm font-medium mb-2">Próximo Check-in</p>
+                <p class="text-4xl font-bold text-gray-800 mb-2">12</p>
+                <p class="text-sm text-gray-500">días</p>
+                <div class="mt-4 flex text-green-600">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                        <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-xs">Reserva confirmada</span>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-gray-200 rounded-2xl p-6 shadow-md transform transition-all duration-300 hover:shadow-xl col-span-2">
+                <p class="text-gray-600 text-sm font-medium mb-3">Última Estadía</p>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-3xl font-bold text-blue-900 mb-1">+850</p>
+                        <p class="text-sm text-gray-600">puntos ganados</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-sm font-semibold text-gray-700">Studio Almarena</p>
+                        <p class="text-xs text-gray-500">10 de septiembre de 2025</p>
+                        <p class="text-xs text-gray-500">3 noches</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="mt-5">
+
+        <!-- Sección 2: Movimientos -->
+        <div class="pl-5">
+            <h2 class="text-2xl font-semibold text-gray-800 my-3">Ultimos movimientos</h2>
+        </div>
+        <section class="grid grid-cols-5 gap-5">
+            <div class="hidden grid-cols-2 col-span-2 gap-5  lg:grid">
+                <div class="bg-blue-50 rounded-xl flex flex-col justify-center items-center p-4 text-center col-span-1">
+                    <p class="text-2xl font-bold text-blue-900">8</p>
+                    <p class="text-xs text-gray-600 mt-1">Estadías este año</p>
+                </div>
+                <div class="bg-green-50 rounded-xl flex flex-col justify-center items-center p-4 text-center col-span-1">
+                    <p class="text-2xl font-bold text-green-700">5,200</p>
+                    <p class="text-xs text-gray-600 mt-1">Puntos ganados</p>
+                </div>
+                <div class="bg-purple-50 rounded-xl flex flex-col justify-center items-center p-4 text-center col-span-1">
+                    <p class="text-2xl font-bold text-purple-700">2,100</p>
+                    <p class="text-xs text-gray-600 mt-1">Puntos canjeados</p>
+                </div>
+                <div class="bg-orange-50 rounded-xl flex flex-col justify-center items-center p-4 text-center col-span-1">
+                    <p class="text-2xl font-bold text-orange-700">Silver</p>
+                    <p class="text-xs text-gray-600 mt-1">Nivel actual</p>
+                </div>
+            </div>
+            <div id="movimientos" class="section-content col-span-5 lg:col-span-3 ">
+                <!-- Tabla de Movimientos -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gradient-to-t from-blue-950 to-sky-900 text-white">
+                                <tr>
+                                    <th class="px-6 py-4 text-left text-sm font-semibold">Fecha</th>
+                                    <th class="px-6 py-4 text-left text-sm font-semibold hidden lg:block">Descripción</th>
+                                    <th class="px-6 py-4 text-left text-sm font-semibold">Categoría</th>
+                                    <th class="px-6 py-4 text-right text-sm font-semibold">Puntos</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50 transition-colors duration-200">
+                                    <td class="px-6 py-4 text-sm text-gray-700">18 Mar 2024</td>
+                                    <td class="px-6 py-4 text-sm text-gray-900 font-medium hidden lg:block">Estadía completada</td>
+                                    <td class="px-6 py-4">
+                                        <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded-full">Suite Premium</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-right text-sm font-bold text-green-600">+850</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors duration-200">
+                                    <td class="px-6 py-4 text-sm text-gray-700">10 Mar 2024</td>
+                                    <td class="px-6 py-4 text-sm text-gray-900 font-medium hidden lg:block">Canje: Noche gratis</td>
+                                    <td class="px-6 py-4">
+                                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">Recompensa</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-right text-sm font-bold text-red-600">-1,500</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors duration-200">
+                                    <td class="px-6 py-4 text-sm text-gray-700">28 Feb 2024</td>
+                                    <td class="px-6 py-4 text-sm text-gray-900 font-medium hidden lg:block">Estadía completada</td>
+                                    <td class="px-6 py-4">
+                                        <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">Habitación Deluxe</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-right text-sm font-bold text-green-600">+620</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors duration-200">
+                                    <td class="px-6 py-4 text-sm text-gray-700">15 Feb 2024</td>
+                                    <td class="px-6 py-4 text-sm text-gray-900 font-medium hidden lg:block">Bonus promocional</td>
+                                    <td class="px-6 py-4">
+                                        <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full">Promoción</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-right text-sm font-bold text-green-600">+500</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors duration-200">
+                                    <td class="px-6 py-4 text-sm text-gray-700">08 Feb 2024</td>
+                                    <td class="px-6 py-4 text-sm text-gray-900 font-medium hidden lg:block">Estadía completada</td>
+                                    <td class="px-6 py-4">
+                                        <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">Habitación Estándar</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-right text-sm font-bold text-green-600">+280</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors duration-200">
+                                    <td class="px-6 py-4 text-sm text-gray-700">25 Ene 2024</td>
+                                    <td class="px-6 py-4 text-sm text-gray-900 font-medium hidden lg:block">Canje: Upgrade habitación</td>
+                                    <td class="px-6 py-4">
+                                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">Recompensa</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-right text-sm font-bold text-red-600">-600</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
